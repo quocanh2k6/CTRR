@@ -37,7 +37,7 @@ void Dijkstra(int s, int t)
             }
         }
     }
-    cout << " Khoang cach ngan nhaty la: " << d[t] << endl;
+    cout << " Khoang cach ngan nhat la: " << d[t] << endl;
     vector<int> path;
     while (1)
     {
@@ -69,7 +69,9 @@ int main()
         adj[x].push_back({y, w});
         adj[y].push_back({x, w});
     }
-    cout << "Nhap dinh dau s, dinh cuoi t: " << ' ';
-    cin >> s >> t;
+    cout << "Nhap dinh dau s: " << ' ';
+    cin >> s;
+    cout << "Nhap dinh cuoi t: " << ' ';
+    cin >> t;
     Dijkstra(s, t);
 }
