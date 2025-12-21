@@ -69,9 +69,9 @@ int main()
         adj[x].push_back({y, w});
         adj[y].push_back({x, w});
     }
-    cout << "Nhap dinh dau s: " << ' ';
+    cout << " Nhap dinh dau s: " << ' ';
     cin >> s;
-    cout << "Nhap dinh cuoi t: " << ' ';
+    cout << " Nhap dinh cuoi t: " << ' ';
     cin >> t;
     Dijkstra(s, t);
 }
